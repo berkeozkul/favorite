@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainPageFragment2">
+    <fragment
+        android:id="@+id/mainPageFragment2"
+        android:name="com.example.favoriteteam.features.MainPageFragment"
+        android:label="MainPageFragment" >
+        <action
+            android:id="@+id/action_mainPageFragment2_to_fenerbahceHistory"
+            app:destination="@id/fenerbahceHistory"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_mainPageFragment2_to_fenerbahceFootballTeam"
+            app:destination="@id/fenerbahceFootballTeam"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_mainPageFragment2_to_fenerbahceBasketballTeam2"
+            app:destination="@id/fenerbahceBasketballTeam"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popExitAnim="@anim/to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fenerbahceFootballTeam"
+        android:name="com.example.favoriteteam.features.football.FootballTeamFragment"
+        android:label="FenerbahceFootballTeam" >
+        <action
+            android:id="@+id/action_fenerbahceFootballTeam_to_footballCard"
+            app:destination="@id/playerCard"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fenerbahceBasketballTeam"
+        android:name="com.example.favoriteteam.features.basketball.BasketballTeamFragment"
+        android:label="activity_fenerbahce_football_team"
+        tools:layout="@layout/fragment_football_team" >
+        <action
+            android:id="@+id/action_fenerbahceBasketballTeam_to_playerCard"
+            app:destination="@id/playerCard"
+            app:enterAnim="@anim/from_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/fenerbahceHistory"
+        android:name="com.example.favoriteteam.features.FenerbahceHistory"
+        android:label="activity_fenerbahce_history"
+        tools:layout="@layout/activity_fenerbahce_history" />
+
+    <dialog
+        android:id="@+id/playerCard"
+        android:name="com.example.favoriteteam.features.PlayerCardBottomSheetDialogFragment"
+        android:label="FootballCard" >
+        <argument
+            android:name="playerId"
+            app:argType="integer" />
+    </dialog>
+</navigation>

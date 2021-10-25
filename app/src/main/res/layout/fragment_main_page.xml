@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/fblogo"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fblogo" />
+
+    <TextView
+        android:id="@+id/fenerbahcesk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/bowlby_one"
+        android:text="@string/fenerbahce"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fblogo" />
+
+    <LinearLayout
+        android:layout_width="419dp"
+        android:layout_height="248dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fenerbahcesk"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/history_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/fenerbahce_button"
+            android:fontFamily="@font/bowlby_one"
+            android:text="@string/history"
+            android:textSize="16sp"
+            app:backgroundTint="#0C0C0C" />
+
+        <Button
+            android:id="@+id/fbfotball_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/fenerbahce_button"
+            android:fontFamily="@font/bowlby_one"
+            android:text="@string/fbfootball"
+            android:textSize="16sp"
+            app:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/fbbasketball_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/fenerbahce_button"
+            android:fontFamily="@font/bowlby_one"
+            android:text="@string/fbbasketball"
+            android:textSize="16sp"
+            app:backgroundTint="#000000" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

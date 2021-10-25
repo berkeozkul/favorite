@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abcd"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="50dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/country"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="355dp"
+        android:scaleType="centerCrop" />
+    <ImageView
+        android:id="@+id/basketballimage"
+        android:layout_width="59dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/basketballname"
+        android:layout_width="157dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/benchnine"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/basketballnumber"
+        android:layout_width="138dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="217dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/benchnine"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/basketballposition"
+        android:layout_width="67dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="287dp"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="@font/benchnine"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+

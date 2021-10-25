@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FavoriteTeam</string>
+    <string name="fenerbahce">Fenerbahce SK</string>
+    <string name="history">Fenerbahce History</string>
+    <string name="fbfootball">Fenerbahce Football Team</string>
+    <string name="fbbasketball">Fenerbahce Basketball Team</string>
+    <string name="fbhistory">Fenerbahçe was founded over a century ago in the district of Kadiköy in Istanbul. The founders were Mr. Nurizade Ziya Songülen, Mr. Ayetullah and Mr. Necip Okaner. This group of individuals founded the club secretly in order to keep a low profile and not become at odds with the strict Ottoman rule which saw Sultan Abdulhamit II forbid Turkish youths from setting up a club and engaging in the game of football played by the English families, something they could only watch in envy.Until a change of legislation in 1908, Fenerbahçe’s activities were conducted under strict secrecy. After this date, however, the new law required that clubs must register in order to exist legally. From that day on, the club was to take its place amongst the top Turkish clubs and achieve much success.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
